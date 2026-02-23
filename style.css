@@ -1,11 +1,18 @@
 body{
+<<<<<<< HEAD
     background-color:rgb(76, 226, 240);
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
+=======
+    background-color:rgb(177, 239, 245);
+    margin:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+>>>>>>> 40eecc0fa08753daa56f8200856b2fafb0744500
 
 }
 
 div{
+<<<<<<< HEAD
     background-color:#fff;
     padding:20px;
     border-radius:5px;
@@ -16,4 +23,21 @@ div{
     margin-left:auto;
     margin-right:auto;
 
+=======
+   background-color:#fff;
+   padding:30px;
+   align-items:center;
+   margin-left:500px;
+   margin-right:500px;
+   margin-top:20px;
+   margin-bottom:10px;
+   align-content: center;
+   box-shadow:0 0 15px rgba(0,0,0,0.2);
+   border-radius:5px; 
+}
+
+h2{
+    color:#1d3557;
+    align:center;
+>>>>>>> 40eecc0fa08753daa56f8200856b2fafb0744500
 }

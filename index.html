@@ -8,21 +8,22 @@
         <div>
             <h1>Loan Checker</h1>
             <form>
-                <label for="age">Age</label><br><br>
-                <input type="number" id="age"  placeholder="Enter your age"><br><br>
-                <label>Monthly Income:</label><br><br>
-                <input type="number" id="income" placeholder="Enter your monthly income"><br><br>
-                <label>Employment Type:</label><br><br>
-                <select id="employmentType" placeholder="Select">
-                    <option>Employed</option>
-                    <option>Self-Employed</option>
-                    <option>Student</option>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" placeholder="Enter your Age"><br><br>
+                <label for="monthlyincome">Monthly Income (KES):</label><br>
+                <input type="number" id="monthlyincome" placeholder="Enter your income"><br><br>
+                <label for="employmentTypes">Employment Type:</label><br>
+                <select id="employmentTypes">
+                    <option value="Employed">Employed</option>
+                    <option value="Self-employed">Self- employed</option>
+                    <option value="Student">Student</option>
                 </select><br><br>
-                <label for="creditScore">Credit Score (0-100)</label><br><br>
-                <input type="number" id="creditScore" placeholder="Enter your Credit Score"><br><br>
-                <button>Check Eligibility</button>
+                <label for="creditscore">Credit Score (0-100):</label><br>
+                <input type="number" id="creditscore" placeholder="Enter your credit score"><br><br>
+                <button id="checkEligibility" onclick="">Check Eligibility</button><br><br>
             </form>
         </div>
         <script src="script.js"></script>
     </body>
+    <script src="script.js"></script>
 </html>
