@@ -5,8 +5,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
-            <h1>Loan Checker</h1>
+        <div class="container1">
+            <h1>Loan Eligibility Checker</h1>
             <form>
                 <label for="age">Age:</label><br>
                 <input type="number" id="age" placeholder="Enter your Age"><br><br>
@@ -20,10 +20,10 @@
                 </select><br><br>
                 <label for="creditscore">Credit Score (0-100):</label><br>
                 <input type="number" id="creditscore" placeholder="Enter your credit score"><br><br>
-                <button id="checkEligibility" onclick="">Check Eligibility</button><br><br>
+                <button id="checkEligibility" onclick="checkEligibility()">Check Eligibility</button><br><br>
+                <div class="container2" id="Result">Result</div>
             </form>
         </div>
         <script src="script.js"></script>
     </body>
-    <script src="script.js"></script>
 </html>
