@@ -10,10 +10,31 @@ function checkEligibility(){
    creditScore = parseFloat(creditScore);
 
   //get selected employment type
-    let selectedEmploymentType = employmentTypes.options(employmentTypes.selectedIndex).value;
+    let selectedEmploymentType = employmentTypes.options[employmentTypes.selectedIndex].value;
 
-    let result = document.getElementById("result").value;
+    let result = document.getElementById("result");
 
    //check eligibility criteria
-    if 
+
+   if (selectedEmploymentType === ""){
+    result.innerHTML = "Please select a valid employment type.";
+   } else if (age < 18){
+    result.innerHTML = "You must be 18 years or older.";
+   } else if (monthlyIncome < 10000){
+    result.innerHTML = "Your monthly income must be atleast KES 10,000.";
+   } else if (creditScore < 30){
+    result.innerHTML = "Your credit score must be a 30 or above.";
+   } else {
+
+    // if all conditions are met, eligible for loan
+    let interestRate;
+     if(creditScore >= 80){
+        interestRate = 10;
+     }else if (creditScore >= 50){
+        interestRate = 14;
+     }else {
+        interestRate = 20;
+     }
+   }
+result.innerHTML = `you qualify for a loan with an interest rate of ${interestRate}%.`;
 }
