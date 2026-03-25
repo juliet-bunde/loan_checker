@@ -4,14 +4,16 @@ function checkEligibility(){
     let employmentTypes = document.getElementById("employmentTypes").value;
     let creditScore = document.getElementById("creditScore").value;
 
-//convert value to number
-age = parseFloat(age);
-monthlyIncome = parseFloat(monthlyIncome);
-creditScore = parseFloat(creditScore);
+    //convert value to number
+   age = parseFloat(age);
+   monthlyIncome = parseFloat(monthlyIncome);
+   creditScore = parseFloat(creditScore);
 
-//get selected employment type
+  //get selected employment type
     let selectedEmploymentType = employmentTypes.options(employmentTypes.selectedIndex).value;
 
-    //check eligibility criteria
-    
+    let result = document.getElementById("result").value;
+
+   //check eligibility criteria
+    if 
 }
