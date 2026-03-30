@@ -35,12 +35,8 @@ function checkEligibility(){
      }else {
         interestRate = 20;
      }
-<<<<<<< HEAD
      
 result.innerHTML = `you qualify for a loan with an interest rate of ${interestRate}%.`;  
 
-=======
-     result.innerHTML = `you qualify for a loan with an interest rate of ${interestRate}%.`;
->>>>>>> 2be2e942770f527ec26aa1737383672f59e54d00
    }
 }
