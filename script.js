@@ -13,6 +13,7 @@ function checkEligibility(){
     let selectedEmploymentType = employmentTypes.options[employmentTypes.selectedIndex].value;
 
     let result = document.getElementById("result");
+    let interestRate;
 
    //check eligibility criteria
 
@@ -27,7 +28,6 @@ function checkEligibility(){
    } else {
 
     // if all conditions are met, eligible for loan
-    let interestRate;
      if(creditScore >= 80){
         interestRate = 10;
      }else if (creditScore >= 50){
@@ -35,8 +35,12 @@ function checkEligibility(){
      }else {
         interestRate = 20;
      }
+<<<<<<< HEAD
      
 result.innerHTML = `you qualify for a loan with an interest rate of ${interestRate}%.`;  
 
+=======
+     result.innerHTML = `you qualify for a loan with an interest rate of ${interestRate}%.`;
+>>>>>>> 2be2e942770f527ec26aa1737383672f59e54d00
    }
 }
